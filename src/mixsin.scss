@@ -1,0 +1,28 @@
+
+$light-mode: (
+  background: #F2F2F2,
+  text: #000000,
+  card-background: #FFFFFF,
+  card-text: #111517,
+  card-text-details: #d6d4d4,
+  border: #e0e0e0,
+  filter-background: #f0f0f0
+);
+
+$dark-mode: (
+  background: #202C36,
+  text: #ffffff,
+  card-background: #2B3844,
+  card-text: #FFFFFF,
+  card-text-details: #d6d4d4,
+  border: #555555,
+  filter-background: #444444
+);
+
+@function get-color($theme, $color) {
+  @return map-get($theme, $color);
+}
+
+// @function color($color-name){
+//     @return var(--color-#{$color-name});
+// }

@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "mixsin.scss";
+
+// :root{
+//     --color-primary:#FFF;
+//     --color-secondary:#111517;
+//     --color-tertiary: #808080;
+//     --color-white:#FFF;
+// }
+
+// [dark-theme= "dark"]{
+//     --color-tertiary: #202C36
+// }
+
+:root {
+    --background: #{get-color($light-mode, background)};
+    --text: #{get-color($light-mode, text)};
+    --card-background: #{get-color($light-mode, card-background)};
+    --card-text: #{get-color($light-mode, card-text)};
+    --border: #{get-color($light-mode, border)};
+    --filter-background: #{get-color($light-mode, filter-background)};
+  }
+  
+  [data-theme='dark'] {
+    --background: #{get-color($dark-mode, background)};
+    --text: #{get-color($dark-mode, text)};
+    --card-background: #{get-color($dark-mode, card-background)};
+    --card-text: #{get-color($dark-mode, card-text)};
+  }
+body {
+    background-color:var(--background);
+    margin: 0;
+}
