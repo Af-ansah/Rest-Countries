@@ -1,0 +1,80 @@
+@import "../../../mixsin.scss";
+
+
+
+
+.card-wrapper {
+    background-color: var(--card-background); 
+    width: 100%;
+    height: 100%;
+    max-height: 336px;
+    max-width: 264px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 16px;
+    padding: 0;
+    color:var(--text);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-wrapper:hover {
+    transform: translateY(-5px);
+ }
+
+.country-flag, .country {
+    flex: 1;
+}
+
+
+.country-flag img, .country-flag {
+    background-color: var(--card-background);
+}
+
+.country-flag img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.country {
+    background-color: var(--card-background);
+    padding: 16px;  
+}
+
+.country-name {
+    background-color: var(--card-background);
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 0.5rem 0;
+}
+.country-details{
+    margin: 1rem 0 0 0;
+}
+
+
+.country-details p{
+    background-color: var(--card-background);
+    margin: 4px 0;
+    color: var(--card-text);
+    margin: 0.5rem 0;
+
+}
+
+.country-details p span {
+    background-color: var(--card-background);
+    color: var(--card-text-details)
+  }
+
+
+.country-details .population,
+.country-details .region,
+.country-details .capital {
+  font-size: 14px;
+  color: var(--card-text);
+ 
+}
+
