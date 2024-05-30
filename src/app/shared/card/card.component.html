@@ -1,0 +1,14 @@
+<div class="card-wrapper" >
+    <div class="country-flag">
+        <img [src]="country.flags.png" [alt]="country.flags.alt">
+    </div>
+    <div class="country">
+        <span class="country-name">{{ country.name.common }}</span>
+        <div class="country-details">
+            <p class="population">Population: <span>{{ country.population }}</span></p>
+            <p class="region">Region: <span>{{ country.region }}</span></p>
+            <p class="capital">Capital: <span>{{ country.capital}}</span></p>
+
+        </div>
+    </div>
+</div>
