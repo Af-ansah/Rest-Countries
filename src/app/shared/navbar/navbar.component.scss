@@ -1,0 +1,35 @@
+@import "../../../mixsin.scss";
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.5);
+    color: var(--text)
+}
+.navbar span {
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: var(--card-background);
+}
+
+
+.modes {
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--card-background);
+    
+}
+
+.modes img {
+    width: 16px;
+    background-color: var(--card-background);
+}
+
+.modes p {
+    font-size: 16px;
+    font-weight: bold;
+    
+}
